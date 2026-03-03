@@ -12,10 +12,10 @@ print("******this is your host: sarvesh khupat *********".center(100))
 print("******TOTAL QUESTION WE HAVE 5 IN WHICH ALL QUESTIONS HAVE A PRICE*********".center(100))
 print("******LETS PLAY !KAUN BANEGA CROREPATI!*********".center(100))
 
-Userinterface = input("ENTER YOUR NAME TO REGISTRATION: ")
+NAME= input("ENTER YOUR NAME TO REGISTRATION: ")
 
 total_money = 0 
-
+time.sleep(0.2)
 print(" Q1. Who is known as the “Missile Man of India”? ")
 A = "1. JAWAHARLAL NEHRU"
 B = ("2. VIKRAM SARABHAI".center(30))
@@ -44,19 +44,20 @@ if choices == 0:
         
         
 if (choices == 3):
-    
+    time.sleep(0.5)
     print("this is right answer and you won 1000rs")
     total_money += 1000
     
   
 else:
+    time.sleep(0.5)
     print("you choose wrong option")
-    print(f"game over","{Userinterface},your money prize is:",total_money)
+    print(f"game over, {NAME},your money prize is:",total_money)
     exit()
 
 
 
-
+time.sleep(0.5)
 print("Q2. The capital city of Australia is:")
 E = "1.Sydney"
 F = "2. Melbourne".center(30)
@@ -85,14 +86,16 @@ if choices == 0:
     
         
 if (choices ==3):
+    time.sleep(0.5)
     print("that's the correct answer and you won 2000")
     total_money += 2000
 else:
+    time.sleep(0.5)
     print("that's the wrong answer")
-    print(f"game over","{Userinterface},your money prize is:",total_money)
+    print(f"game over, {NAME},your money prize is:",total_money)
     exit()
 
-
+time.sleep(0.5)
 print("Q3. Which planet is known as the “Red Planet”?")
 I = "1.Venus"
 J = "2.Mars".center(30)
@@ -120,15 +123,17 @@ if choices == 0:
         
         
 if (choices == 2):
+    time.sleep(0.5)
     print("that's your correct option and you won 3000")
     total_money += 3000
 else:
+    time.sleep(0.5)
     print("that's the wrong answer")
-    print(f"game over","{Userinterface},your money prize is:",total_money)
+    print(f"game over,{NAME},your money prize is:",total_money)
     exit()
 
 
-
+time.sleep(0.5)
 print("Q4. In which year did India gain independence?")
 M = " 1. 1942"
 N = " 2. 1945".center(30)
@@ -153,14 +158,16 @@ if choices == 0:
         print("Lifeline already used.")
         choices = int(input("Enter your answer: "))
 if (choices == 3):
+    time.sleep(0.5)
     print("that's the correct option and you won 4000")
     total_money +=4000
 else:
+    time.sleep(0.5)
     print("thats the wrong answer")
-    print(f"game over""{Userinterface},your money prize is:",total_money)
+    print(f"game over, {NAME},your money prize is:",total_money)
     exit()
 
-
+time.sleep(0.5)
 print("Q5. Who is the current Prime Minister of India (2026)?")
 Q = "1. Rahul Gandhi"
 R = "2.Narendra Modi".center(30)
@@ -185,17 +192,20 @@ if choices == 0:
         print("Lifeline already used.")
         choices = int(input("Enter your answer: "))
 if (choices == 2):
+    time.sleep(0.5)
     print("that's the correct answer and you won 5000rs")
     total_money +=5000 
 else:
+    time.sleep(0.5)
     print("that's the wrong answer")
-    print(f"game over","{Userinterface},your money prize is:",total_money)
+    print(f"game over, {NAME},your money prize is:",total_money)
     exit()
 
-
+time.sleep(2)
 print("that's the our game hope you like it!")
 print("your winning amount is generating soon.....")
 time.sleep(2)
-print(f"{Userinterface}, your prize pool is", total_money)
+print(f"{NAME} , your prize pool is", total_money)
+
 
 
